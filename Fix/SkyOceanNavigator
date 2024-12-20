@@ -1,0 +1,23 @@
+class SkyOceanNavigator:
+	def __init__(self, vehicle_type):
+		self.vehicle_type = vehicle_type
+
+	def navigate(self, destination):
+		if not isinstance(destination, str):
+			raise TypeError("Destination must be a string.")
+		print(f"Navigating to {destination}.")
+
+	def adjust_for_environment(self, environment):
+		if environment not in ["Air", "Water"]:
+			print("Invalid environment.")
+		else:
+			self.environment = environment
+
+def explore_ocean():
+	navigator = SkyOceanNavigator("Submersible")
+	navigator.navigate("Pacific Ocean")
+	navigator.adjust_for_environment("Water")
+
+if __name__ == "__main__":
+	explore_ocean()
+	explore_ocean()
