@@ -6,6 +6,7 @@ from Routes.dummyRoute import dummy_router
 from Routes.apisRoute import apis_router
 from Routes.pezRoute import pez_router
 from Routes.espectaculoRoute import espectaculo_router
+from Routes.pezEspectaculoRelRoute import pezEspectaculoRel_router
 import uvicorn
 
 # Crear la aplicación
